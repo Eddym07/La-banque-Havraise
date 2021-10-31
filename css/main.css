@@ -86,25 +86,28 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-  .dispnone {
+              /* ########## Layer #########*/
+  
+   .dispnone {
     display: none;
   }
   
    #layer {
     display: flex;
     justify-content: center;
-   
+
   }
+  
   .back {
+    
     background-color: rgba(0, 0, 0, 0.4);
-    position:absolute;
+    position:fixed;
     height: 100%;
     width: 100%; 
    display:flex;
    justify-content: center;
    align-items: center;
   }
-
   .message {
     background-color:rgb(124, 148, 158);
     width: 70%;
@@ -113,9 +116,7 @@ textarea {
     justify-content: space-around;
     padding: 1em;
   }
-  h3 {
-
-  }
+  
   
   #btn {
     background-color: rgb(243, 111, 111);
@@ -126,18 +127,19 @@ textarea {
   
   }
 
-  
+              /* ########## Header ########## */
    header {
     display: flex;
     padding: 0.5em;
   }
   
   .logo {
-    background-color:cadetblue;
+    
     height:17vh;
   }
   
   .nom {
+    font-family: 'Great Vibes', cursive;
     background-color:#e3f2fd;
     color:#8187dc;
     display:flex;
@@ -151,14 +153,91 @@ textarea {
   }
 
   .imgnom {
-    font-size: 20px;
+    font-size: 30px;
     display:flex;
     justify-content: center;
     align-items: center;
     height:100%;
     width: 100%;
-    
   }
+
+  .colorbtn {
+    background-color: #8187dc;
+  }
+
+              /*########## Footer ##########*/
+  /*footer {
+    background-color: #e3f2fd;
+   
+    display:flex;
+    justify-content: center;
+    margin:0.5em;
+  }
+  .logofooter {
+    
+    height:7vh;
+    
+  }*/
+
+  .logofooter {
+    
+    height:7vh;
+  }
+
+  .copy {
+    font-family: 'Great Vibes', cursive;
+  }
+  
+              /*########## Rules tablette ##########*/
+
+      @media screen and (min-width: 600px) {
+
+        /* ########## Header ########## */
+  
+  .imgnom {
+    font-size: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width: 100%;
+  }   
+  
+}
+
+/*########## Rules small desktop ##########*/
+
+@media screen and (min-width: 800px) {
+
+  /* ########## Header ########## */
+
+.imgnom {
+font-size: 50px;
+display:flex;
+justify-content: center;
+align-items: center;
+height:100%;
+width: 100%;
+}   
+
+}
+
+/*########## Rules desktop ##########*/
+
+@media screen and (min-width: 1085px) {
+
+  /* ########## Header ########## */
+
+.imgnom {
+font-size: 60px;
+display:flex;
+justify-content: center;
+align-items: center;
+height:100%;
+width: 100%;
+}   
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

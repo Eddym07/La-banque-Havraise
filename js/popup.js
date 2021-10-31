@@ -14,7 +14,7 @@ httpRequest.onreadystatechange = function () {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
         if (httpRequest.status === 200) {
             let data = httpRequest.responseText;
-                console.log(data);
+                console.log(data)
             //j'affiche les valeurs contenues dans l'objet via les propriété
             h3.innerText = data;
         } else {
